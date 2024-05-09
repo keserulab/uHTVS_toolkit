@@ -152,7 +152,8 @@ def multiproc(count):
              except:
               #print("Ligand "+str(ID)+" has not been docked")
               dropped += "\n" + str(ID) 	# Collecting dropped ligands in case of file deletion is requested
-        os.remove("Batch_py" + str(count) + ".txt")     
+        os.remove("Batch_py" + str(count) + ".txt")
+        os.remove(ID_file)
        
        # Collecting dropped ligands if file deletion is not requested
        
