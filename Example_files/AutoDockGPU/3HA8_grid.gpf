@@ -1,0 +1,24 @@
+npts 60 50 50                        # num.grid points in xyz
+gridfld 3HA8_empty_OK.maps.fld       # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A C NA OA N HD SA S P I Cl Br F  # ligand atom types
+receptor 3HA8_empty_OK.pdbqt         # macromolecule
+gridcenter -11.079 12.787 17.186     # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 3HA8_empty_OK.A.map              # atom-specific affinity map
+map 3HA8_empty_OK.C.map              # atom-specific affinity map
+map 3HA8_empty_OK.NA.map             # atom-specific affinity map
+map 3HA8_empty_OK.OA.map             # atom-specific affinity map
+map 3HA8_empty_OK.N.map              # atom-specific affinity map
+map 3HA8_empty_OK.HD.map             # atom-specific affinity map
+map 3HA8_empty_OK.SA.map             # atom-specific affinity map
+map 3HA8_empty_OK.S.map              # atom-specific affinity map
+map 3HA8_empty_OK.P.map              # atom-specific affinity map
+map 3HA8_empty_OK.I.map              # atom-specific affinity map
+map 3HA8_empty_OK.Cl.map             # atom-specific affinity map
+map 3HA8_empty_OK.Br.map             # atom-specific affinity map
+map 3HA8_empty_OK.F.map              # atom-specific affinity map
+elecmap 3HA8_empty_OK.e.map          # electrostatic potential map
+dsolvmap 3HA8_empty_OK.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
